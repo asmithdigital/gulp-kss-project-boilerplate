@@ -1,0 +1,27 @@
+{
+    "name": "foundation-test",
+    "version": "0.0.0",
+    "authors": [
+        "Ben Melville <benjamin.melville@adelaide.edu.au>"
+    ],
+    "description": "a test app for foundation css framework",
+    "main": "index.html",
+    "keywords": [
+        "foundation",
+        "test"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "foundation": "~5.5.1",
+        "bootstrap-sass": "3.3.3",
+        "imgLiquid": "0.9.944"
+    }
+}

@@ -1,0 +1,34 @@
+// Yeah
+
+body{
+    background-color: $smoke;
+}
+
+main{
+    @include clearfix();
+}
+#style-guide{
+    border: none;
+    width:100%;
+    overflow: hidden;
+}
+header{
+    background-color: $primary-color;
+    .top-bar{
+        background-color: $red;
+    }
+    .logo{
+        display: block;
+        padding: rem-calc(30);
+    }
+}
+footer{
+    background-color: $primary-color;
+    @include clearfix();
+}
+
+.menu,
+.item-list ul{
+    @include side-nav();
+}
+

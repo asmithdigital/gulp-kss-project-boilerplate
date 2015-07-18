@@ -1,0 +1,48 @@
+// Button
+//
+// A more description.
+//
+// markup: <div class="button {{modifier_class}}">hello</div>
+//
+// :hover - Highlight the button when hovered.
+// .button-lrg - A large button.
+// .button-sml - A small button.
+//
+// Styleguide Buttons
+.button{
+    &.button-lrg{
+        @include button($button-lrg);
+    }
+}
+
+
+// Button Small
+//
+// markup:
+// <div class="button button-sml">hello</div>
+//
+// Styleguide Buttons - Small
+.button.button-sml{
+    @include button($button-sml);
+}
+
+// Red button
+//
+// markup:
+// <div class="button button-red">hello</div>
+//
+// Styleguide Buttons - Red
+.button.button-red{
+    @include button($button-med,$red);
+}
+
+
+// Black button
+//
+// markup:
+// <div class="button button-black">hello</div>
+//
+// Styleguide Buttons - Black
+.button.button-black{
+    @include button($button-med,black);
+}

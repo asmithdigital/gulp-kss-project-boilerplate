@@ -1,0 +1,18 @@
+.layout-container{
+    background-color: $white;
+    @include grid-row();
+}
+h1{
+    color:$white;
+}
+@media #{$medium-up} {
+    .layout-sidebar-first{
+        @include grid-column(2);
+    }
+    .layout-content{
+        @include grid-column(8);
+    }
+    .layout-sidebar-second{
+        @include grid-column(2);
+    }
+}
