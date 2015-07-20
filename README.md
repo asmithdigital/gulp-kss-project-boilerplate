@@ -12,8 +12,8 @@ Gulp KSS Scss boilerplate
 **Build the KSS styleguide:**
 ```gulp style-guide```
 
-View the KSS style-guide by navigating to 
-```/dev/kss/generated/standalone/```
+View the KSS style-guide by navigating to:
+```dev/kss/generated/standalone```
 
 **Build gulp project:**
 ```gulp```
