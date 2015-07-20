@@ -1,19 +1,17 @@
 Gulp KSS Scss boilerplate
 =========================
 
-*Remember to ensure you have the .gitignore file. It is hidden and you will only see it in the command line or text editor.*
-
 **Install Node plugins:**
-```npm install```
+``` npm install ```
 
 **Install Bower dependencies:**
-```bower install```
+``` bower install ```
 
 **Build the KSS styleguide:**
-```gulp style-guide```
+``` gulp style-guide ```
 
 **Build gulp project:**
-```gulp```
+``` gulp ```
 
-**Watch for changes in JS and SCSS:**
-```gulp watch```
+**Watch for changes in JS and SCSS and style-guide:**
+``` gulp watch ```
