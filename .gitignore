@@ -1,5 +1,6 @@
 dev/bower_components
 dev/node_modules
+dev/dist
 .idea/
 css/
 js/

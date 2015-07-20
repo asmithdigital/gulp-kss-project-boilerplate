@@ -22,10 +22,10 @@ var jsFiles = {
         './bower_components/foundation/js/foundation.min.js',
         './bower_components/foundation/js/foundation/foundation.clearing.js',
         './bower_components/imgLiquid/js/imgLiquid-min.js',
-        './js/bottom.js',
+        './javascript/bottom.js',
     ],
     'optional.min.js':[
-        './js/optional.js'
+        './javascript/optional.js'
     ]
 };
 
