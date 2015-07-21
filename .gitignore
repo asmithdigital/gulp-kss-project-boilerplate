@@ -4,5 +4,5 @@ dev/dist
 .idea/
 css/
 js/
-dev/kss/generated/standalone/
+dev/dist
 npm-debug.log
