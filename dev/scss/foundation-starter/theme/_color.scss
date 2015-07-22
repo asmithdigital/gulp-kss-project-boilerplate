@@ -1,0 +1,28 @@
+$blue: #005a9c;
+// $red - The color hex at the top.
+$red: #EC1C2E;
+$primary-color: $blue;
+$body-font-family: Georgia,Times,serif;
+$topbar-divider-border-top: $blue;
+$topbar-link-bg: $blue;
+$topbar-link-bg-hover: scale-color($blue, $lightness: -35%);
+$topbar-link-bg-color-hover: scale-color($blue, $lightness: -35%);
+$h2-font-size: rem-calc(30);
+.theme-primary-color{
+    color:blue;
+}
+// Color
+//
+// markup: <h2 class="{{modifier_class}}">hello</h2>
+//
+// default - the default colour.
+// .primary-color - Primary color.
+// .secondary-color - secondary color.
+//
+// Styleguide Colors
+.primary-color{
+    color:$primary-color;
+}
+.secondary-color{
+    color:$red;
+}

@@ -1,18 +1,41 @@
-.layout-container{
-    background-color: $white;
-    @include grid-row();
+@import 'layout/spaces';
+
+// Layout
+//
+// A more description.
+//
+// Styleguide layout
+
+// Header
+//
+// A more description.
+//
+// markup: layout.header.html
+//
+// Styleguide layout.header
+
+.navbar {
+  // styles
 }
-h1{
-    color:$white;
-}
-@media #{$medium-up} {
-    .layout-sidebar-first{
-        @include grid-column(2);
-    }
-    .layout-content{
-        @include grid-column(8);
-    }
-    .layout-sidebar-second{
-        @include grid-column(2);
-    }
+
+// Left Nav
+//
+// A more description.
+//
+// markup: layout.left-nav.html
+//
+// Styleguide layout.left-nav
+
+// Footer
+//
+// weight: 1
+//
+// A more description.
+//
+// markup: layout.footer.html
+//
+// Styleguide layout.footer
+
+.footer {
+  @include clearfix();
 }
