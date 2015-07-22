@@ -65,7 +65,7 @@ gulp.task('sass',function(){
 });
 
 gulp.task('js',function() {
-    async.each(jsFiles,
+    async.each(['all-top.min.js','all-bottom.min.js', 'optional.min.js'],
         function(jsFile,callback){
             gulp.src(jsFiles[jsFile])
             .pipe(sourcemaps.init())
@@ -76,6 +76,9 @@ gulp.task('js',function() {
             .on('end',callback);
         },
         function(err){
+            if (err) {
+                console.log(err);
+            }
             event.emit('js created');
         }
     );
@@ -113,7 +116,7 @@ gulp.task('style-guide', function () {
 
 gulp.task('watch-sass-js', function() {
     gulp.watch(['./scss/**/*'],['sass']);
-    gulp.watch(['./js/**/*'],['js']);
+    gulp.watch(['./javascript/**/*'],['js']);
 });
 
 gulp.task('watch-style-guide', function() {
