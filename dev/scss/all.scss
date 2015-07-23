@@ -1,16 +1,20 @@
 // First load init
 @import "init";
 
+// Second load theme.
+// colors, bootstrap/foundation
+@import "theme/**/*";
+
 // Type
-@import 'typography/typography';
+@import 'typography/**/*';
 
 // Layout
-@import 'layout/layout';
+@import 'layout/**/*';
 
 // Components
-@import "components/components";
+@import "components/**/*";
 
 // Menus
-@import 'menus/menus';
+@import 'menus/**/*';
 
 @import 'blame';
