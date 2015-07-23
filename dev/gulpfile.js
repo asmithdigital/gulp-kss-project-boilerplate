@@ -65,6 +65,10 @@ gulp.task('sass',function(){
     .pipe(sass({errLogToConsole: true, includePaths:sassIncludes}))
     .pipe(minifycss())
     .pipe(sourcemaps.write('.'))
+    .pipe(autoprefixer({
+        browsers: ["last 4 versions", "ios 6"],
+        cascade: false
+    }))
     .pipe(gulp.dest('./../css'))
     .on('end',function(){
         event.emit('css created');
@@ -89,15 +93,6 @@ gulp.task('js',function() {
             event.emit('js created');
         }
     );
-});
-
-gulp.task('autoprefixer', function () {
-    return gulp.src('./../css/*.css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist'));
 });
 
 
