@@ -64,11 +64,11 @@ gulp.task('sass',function(){
     }))
     .pipe(sass({errLogToConsole: true, includePaths:sassIncludes}))
     .pipe(minifycss())
-    .pipe(sourcemaps.write('.'))
     .pipe(autoprefixer({
         browsers: ["last 4 versions", "ios 6"],
         cascade: false
     }))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./../css'))
     .on('end',function(){
         event.emit('css created');
@@ -106,6 +106,7 @@ gulp.task('scss-lint', function() {
     .pipe(scsslint());
 });
 
+
 gulp.task('es-lint', function () {
     return gulp.src(['./javascript/*js'])
         // eslint() attaches the lint output to the eslint property 
@@ -126,10 +127,10 @@ gulp.task('style-guide', function () {
         standalone:function(callback){
             run('./node_modules/.bin/kss-node scss/ \
                 -t kss/templates/standalone \
-                --css ../../../../css/all.css ../../../../css/screen.css ../../../../css/print.css \
+                --css ../css/all.css ../css/screen.css ../css/print.css \
                 --js ../../../../js/all-top.min.js ../../../../js/all-bottom.min.js \
-                --source kss/templates \
-                --destination kss/generated/standalone > /dev/null').exec(callback);
+                --source scss \
+                --destination ../styleguide > /dev/null').exec(callback);
         }
     },
     function(){

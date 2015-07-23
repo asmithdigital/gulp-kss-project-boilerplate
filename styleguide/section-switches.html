@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="../../../../css/all.css">
+  <link rel="stylesheet" href="../css/all.css">
 
 </head>
 <body id="kss-node">
@@ -35,8 +35,6 @@
           <span class="kss-nav__ref">1</span
           ><span class="kss-nav__name">Accordion</span>
         </a>
-        <ul class="kss-nav__menu-child">
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-buttons.html">
@@ -61,74 +59,96 @@
           <span class="kss-nav__ref">6</span
           ><span class="kss-nav__name">Switch</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-switches.html#kssref-switches-rounded">
+                <span class="kss-nav__ref">6.1</span
+                ><span class="kss-nav__name">Switch rounded</span>
+              </a>
+            </li>
+        </ul>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-accordion" class="kss-section kss-section--depth-1">
+      <div     id="kssref-switches" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-accordion">
-          <span class="kss-title__ref">1</span
-          >Accordion
+        <a class="kss-title__permalink" href="#kssref-switches">
+          <span class="kss-title__ref">6</span
+          >Switch
           <span class="kss-title__permalink-hash">#permalink</span>
         </a>
       </h1>
 
 
-      <div class="kss-description">
-        <p>A more description.</p>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
         <div class="kss-modifier__heading kss-style">
-          Examples
-        </div>
-        <div class="kss-modifier__default-name kss-style">
-          Default styling
+          Example
         </div>
         <div class="kss-modifier__example">
-          <div class="button {$modifiers}">hello</div>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          :hover
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Highlight the button when hovered.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="button {$modifiers}">hello</div>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .button-lrg
-        </div>
-        <div class="kss-modifier__description kss-style">
-          A large button.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="button {$modifiers}">hello</div>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .button-sml
-        </div>
-        <div class="kss-modifier__description kss-style">
-          A small button.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="button {$modifiers}">hello</div>
+          <div class="switch">
+<input id="exampleCheckboxSwitch" type="checkbox">
+<label for="exampleCheckboxSwitch"></label>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;button {$modifiers}&quot;&gt;hello&lt;/div&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;switch&quot;&gt;
+&lt;input id=&quot;exampleCheckboxSwitch&quot; type=&quot;checkbox&quot;&gt;
+&lt;label for=&quot;exampleCheckboxSwitch&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </div>
+      <section id="kssref-switches-rounded" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-switches-rounded">
+          <span class="kss-title__ref">6.1</span
+          >Switch rounded
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="switch round large">
+<input id="exampleRadioSwitch3" type="radio" name="testGroup">
+<label for="exampleRadioSwitch3"></label>
+</div>
+<div class="switch round large">
+<input id="exampleRadioSwitch4" type="radio" name="testGroup">
+<label for="exampleRadioSwitch4"></label>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;switch round large&quot;&gt;
+&lt;input id=&quot;exampleRadioSwitch3&quot; type=&quot;radio&quot; name=&quot;testGroup&quot;&gt;
+&lt;label for=&quot;exampleRadioSwitch3&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;switch round large&quot;&gt;
+&lt;input id=&quot;exampleRadioSwitch4&quot; type=&quot;radio&quot; name=&quot;testGroup&quot;&gt;
+&lt;label for=&quot;exampleRadioSwitch4&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
 </article>
 
 <!-- SCRIPTS -->
