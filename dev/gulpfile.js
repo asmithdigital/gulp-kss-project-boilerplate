@@ -18,13 +18,13 @@ var eslint = require('gulp-eslint');
 
 var jsFiles = {
     'all-top.min.js': [
-        './bower_components/modernizr/modernizr.js',
-        './bower_components/jquery/dist/jquery.min.js'
+        './app/bower_components/modernizr/modernizr.js',
+        './app/bower_components/jquery/dist/jquery.min.js'
     ],
     'all-bottom.min.js': [
-        './bower_components/foundation/js/foundation.min.js',
-        './bower_components/foundation/js/foundation/foundation.clearing.js',
-        './bower_components/imgLiquid/js/imgLiquid-min.js',
+        './app/bower_components/foundation/js/foundation.min.js',
+        './app/bower_components/foundation/js/foundation/foundation.clearing.js',
+        './app/bower_components/imgLiquid/js/imgLiquid-min.js',
         './javascript/bottom.js',
     ],
     'optional.min.js':[
@@ -39,8 +39,8 @@ var sassFiles = [
 ];
 
 var sassIncludes = [
-    './bower_components/foundation/scss',
-    './bower_components/bootstrap-sass/assets/stylesheets'
+    './app/bower_components/foundation/scss',
+    './app/bower_components/bootstrap-sass/assets/stylesheets'
 ];
 
 // gulp.task('clear-drupal-css-js-cache',function(){

@@ -1,8 +1,6 @@
-dev/bower_components
+dev/app
 dev/node_modules
-dev/dist
 .idea/
 css/
 js/
-dev/dist
 npm-debug.log
