@@ -3,4 +3,5 @@ dev/node_modules
 .idea/
 css/
 js/
+styleguide/
 npm-debug.log
