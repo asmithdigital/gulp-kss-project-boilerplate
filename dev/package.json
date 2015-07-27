@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "gulp-scss-lint": "~0.2.2",
-    "gulp-css-globbing": "~0.1.8"
+    "gulp-css-globbing": "~0.1.8",
+    "gulp-eslint": "~0.15.0"
   }
 }
