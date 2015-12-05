@@ -1,9 +1,9 @@
 // First load init
-@import "init";
+@import 'init';
 
 // Second load theme.
 // colors, bootstrap/foundation
-@import "theme/**/*";
+@import 'theme/**/*';
 
 // Type
 @import 'typography/**/*';
@@ -12,7 +12,7 @@
 @import 'layout/**/*';
 
 // Components
-@import "components/**/*";
+@import 'components/**/*';
 
 // Menus
 @import 'menus/**/*';
